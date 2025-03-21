@@ -29,3 +29,14 @@ tasks.named<JavaExec>("run") {
         mainClass.set(algorithmClass)
     }
 }
+
+dependencies {
+    implementation("org.apache.kafka:kafka-clients:3.7.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+}
+
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web:3.2.3")
+    implementation("org.springframework.kafka:spring-kafka:3.1.1")
+}
